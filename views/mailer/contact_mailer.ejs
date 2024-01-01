@@ -1,0 +1,16 @@
+<div>
+  <%if(user.resent){%>
+  <h3>User Contacted Again</h3>
+  <%}else{%>
+  <h3>New Contact Added</h3>
+  <%}%>
+  <div>
+    <p>User Name : <%= user.firstname%> <%= user.lastname%></p>
+    <p>Email : <%= user.email%></p>
+
+    <p>Phone : <%= user.contactNumber%></p>
+    <% if(user.message){%>
+    <p>Message : <%= user.message%></p>
+    <%}%>
+  </div>
+</div>
